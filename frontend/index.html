@@ -11,7 +11,7 @@
     </head>
 
     <body class="bg-gradient-to-r from-green-400 to-blue-500 min-h-screen">
-        <div class="container mx-auto px-4 py-20">
+        <div class="container mx-auto px-4">
             <h1 class="text-4xl text-white font-bold mb-8 text-center">First Year Persistence Prediction</h1>
             <div class="w-full max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
                 <form id="predictionForm">
@@ -91,13 +91,15 @@
                         </div>
                     </div>
                     <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 float-right">Predict</button>
+                    <button type="button" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 float-right" id="btn_scores">Scores</button>
+                    <button type="button" class="bg-blue-600 text-white px-4 py-2 rounded mt-4 float-right" id="btn_summary">Summary</button>
                 </form>
                 <div id="result" class="mt-3"></div>
             </div>
         </div>
 
         <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document" style="min-width: 800px !important">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="resultModalLabel">Prediction Result</h5>
