@@ -40,6 +40,7 @@ $(document).ready(function () {
         $("#resultLoading").show();
         $("#resultGood").hide().removeClass("animate-scale-up");
         $("#resultSad").hide().removeClass("animate-scale-up");
+        $("#resultText").html("Loading......");
 
         // Simulate a short delay (e.g., waiting for API response)
         setTimeout(function () {
@@ -80,6 +81,7 @@ $(document).ready(function () {
         $("#resultLoading").show();
         $("#resultGood").hide().removeClass("animate-scale-up");
         $("#resultSad").hide().removeClass("animate-scale-up");
+        $("#resultText").html("Loading......");
 
         // Simulate a short delay (e.g., waiting for API response)
         setTimeout(function () {
@@ -117,6 +119,7 @@ $(document).ready(function () {
         $("#resultLoading").show();
         $("#resultGood").hide().removeClass("animate-scale-up");
         $("#resultSad").hide().removeClass("animate-scale-up");
+        $("#resultText").html("Loading......");
 
         // Simulate a short delay (e.g., waiting for API response)
         setTimeout(function () {
