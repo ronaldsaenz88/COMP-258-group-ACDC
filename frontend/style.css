@@ -1,3 +1,46 @@
+/*
+# GROUP PROJECT
+
+## Welcome to the COMP 258 Project - Neural Networks Project - Full Stack Application to predict first-year Persistence​
+
+Relevant Information:
+
+    College: Centennial College
+    Program: Software Engineering Technology - Artificial Intelligence
+    Term: Winter 2023
+    Course: Neural Networks (SEC. 001) - COMP258001_2023W
+
+Group AC/DC
+
+Group Members
+
+    Pereira Barbosa, Ana​
+    Mina Trujillo, Joan​
+    Radmy, Mahpara Rafia​
+    Sidhu, Manipal​
+    Saenz Huerta, Ronald​
+    Massa Rebolledo, Stella
+
+COMP 258 Project
+
+Group Project
+
+You are supposed to use Neural Networks and build a full-stack intelligent solution for any of the following problems:
+-	student success in the program (program completion)
+-	Persistence (1st year persistence)
+-	Academic performance (intake GPA)
+-	Other outcomes that you may discover in the dataset
+
+Purpose:
+The purpose of this project is to:
+- Design and code full-stack intelligent apps using emerging frameworks
+- Build a Rest or Graph QL API 
+- Build a Front-End for the Rest/Graph QL API 
+- Apply appropriate design patterns and principles
+- Use Neural Networks to make intelligent use of data
+
+*/
+
 body {
     font-family: Arial, sans-serif;
   }
