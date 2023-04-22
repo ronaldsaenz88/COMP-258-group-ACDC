@@ -38,7 +38,7 @@ X_test_df = pd.read_csv(path.join(deploy_folder,"X_test_data_group_acdc.csv"))
 y_test_df = pd.read_csv(path.join(deploy_folder,"y_test_data_group_acdc.csv")).to_numpy()
 
 
-@app.route("/summary", methods=['GET'])
+@app.route("/api/summary", methods=['GET'])
 #@cross_origin()
 def summary():
     string_list = []
@@ -49,7 +49,7 @@ def summary():
 
 
 
-@app.route("/scores", methods=['GET','POST']) #use decorator pattern for the route
+@app.route("/api/scores", methods=['GET','POST']) #use decorator pattern for the route
 #@cross_origin()
 def scores():              
     y_pred = model.predict(X_test_df)
@@ -85,7 +85,7 @@ def scores():
     
 
 
-@app.route("/predict", methods=['POST'])
+@app.route("/api/predict", methods=['POST'])
 #@cross_origin()
 def predict():
     json_dict = request.json
@@ -96,8 +96,8 @@ def predict():
     print('Data JSON: \n', json_dict)    
     df = pd.DataFrame(json_dict, columns=class_names)
 
-    df["FirstTermGpa"] = df["FirstTermGpa"].astype(float)
-    df["SecondTermGpa"] = df["SecondTermGpa"].astype(float)
+    df["FirstTermGpa"] = df["FirstTermGpa"].astype(np.float32)
+    df["SecondTermGpa"] = df["SecondTermGpa"].astype(np.float32)
     df["Funding"] = df["Funding"].astype(int)
     df["School"] = df["School"].astype(int)
     df["FastTrack"] = df["FastTrack"].astype(int)
@@ -106,8 +106,8 @@ def predict():
     df["Gender"] = df["Gender"].astype(int)
     df["PreviousEducation"] = df["PreviousEducation"].astype(int)
     df["AgeGroup"] = df["AgeGroup"].astype(int)
-    df["HighSchoolAverageMark"] = df["HighSchoolAverageMark"].astype(float)
-    df["MathScore"] = df["MathScore"].astype(float)
+    df["HighSchoolAverageMark"] = df["HighSchoolAverageMark"].astype(np.float32)
+    df["MathScore"] = df["MathScore"].astype(np.float32)
     df["EnglishGrade"] = df["EnglishGrade"].astype(int)
 
 
